@@ -28,3 +28,11 @@ body{
     display: grid;
     justify-items: center;
 }
+input[type="text"]{
+    width: 90px;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 21px;
+    border-radius: 10px;
+    border: 2px solid #202020;
+}
