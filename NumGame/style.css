@@ -1,0 +1,12 @@
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right , #5217b1,#ffce6c);
+}
+#container{
+   
+}
