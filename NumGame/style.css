@@ -35,6 +35,9 @@ input[type="text"]{
     margin-top: 21px;
     border-radius: 10px;
     border: 2px solid #202020;
+    color: #5a20b8;
+    font-weight: 600;
+    font-size: 20px;
 }
 button{
     width: 160px;
