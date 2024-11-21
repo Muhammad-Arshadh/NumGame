@@ -11,4 +11,8 @@ function play(){
     if(user_guess<1||user_guess>100){
         alert("Enter a number between 1 to 100")
     }
+    else{
+        guessed_num.push(user_guess);
+        no_of_guesses += 1;
+    }
 }
