@@ -26,6 +26,10 @@ function play(){
             msg2.textContent = "No of guess : " + no_of_guesses;
             msg3.textContent = "Guessed No : " + guessed_num;
         }
-       
+        else if(user_guess==answer){
+            msg1.textContent = "YOU GOT IT!";
+            msg2.textContent = "No of guess : " + no_of_guesses;
+            msg3.textContent = "Guessed No : " + guessed_num;
+        }
     }
 }
