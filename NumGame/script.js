@@ -1,5 +1,5 @@
 var lowAndHigh = document.getElementById("message1")
-var msg2 = document.getElementById("message2")
+var NoOfGuess = document.getElementById("message2")
 var msg3 = document.getElementById("message3")
 var button = document.getElementById("btn")
 var answer = Math.floor(Math.random()*100) + 1;
@@ -17,18 +17,18 @@ function play(){
 
         if(user_guess < answer){
             lowAndHigh.textContent = "Your guess is too low";
-            msg2.textContent = "No of guess : " + no_of_guesses;
+            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
             msg3.textContent = "Guessed No : " + guessed_num;
 
         }
         else if(user_guess > answer){
             lowAndHigh.textContent = "Your guess is too high";
-            msg2.textContent = "No of guess : " + no_of_guesses;
+            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
             msg3.textContent = "Guessed No : " + guessed_num;
         }
         else if(user_guess==answer){
             lowAndHigh.textContent = "YOU GOT IT!";
-            msg2.textContent = "No of guess : " + no_of_guesses;
+            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
             msg3.textContent = "Guessed No : " + guessed_num;
             button.disabled  = true;
         }
