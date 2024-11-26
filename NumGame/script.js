@@ -31,6 +31,7 @@ function play(){
             NoOfGuess.textContent = "No of guess : " + no_of_guesses;
             GuessedNo.textContent = "Guessed No : " + guessed_num;
             button.disabled  = true;
+            button.style.pointerEvents = "none";
         }
     }
 }
