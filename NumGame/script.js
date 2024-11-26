@@ -2,14 +2,17 @@ var yourGuess = document.getElementById("message1")
 var NoOfGuess = document.getElementById("message2")
 var GuessedNo = document.getElementById("message3")
 var button = document.getElementById("btn")
+var input = document.getElementById("guess")
 var answer = Math.floor(Math.random()*100) + 1;
 var no_of_guesses = 0;
 var guessed_num = [];
 
 function play(){
     var user_guess = document.getElementById("guess").value;
-    if(user_guess<1||user_guess>100){
+    if(user_guess<1||user_guess>100||input.value === ""){
         alert("Enter a number between 1 to 100")
+        button.disabled = true;
+        button.style.pointerEvents = "none";
     }
     else{
         guessed_num.push(user_guess);
