@@ -10,7 +10,6 @@ var guessed_num = [];
 function play(){
     if(user_guess<1||user_guess>100||input.value === ""){
         alert("Enter a number between 1 to 100")
-        button.disabled = true;
         button.style.pointerEvents = "none";
     }
     else{
