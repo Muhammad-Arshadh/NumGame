@@ -7,15 +7,15 @@ var answer = Math.floor(Math.random()*100) + 1;
 var no_of_guesses = 0;
 var guessed_num = [];
 
-function play(){
+function play(){ 
     var user_guess = input.value;
-    if(user_guess<1||user_guess>100||input.value === ""){
+    if(user_guess<1||user_guess>100||input.value === ""){ //Need to disable button and hover before entering a valid input 
         alert("Enter a number between 1 to 100")
         button.style.pointerEvents = "none";
     }
     else{
         guessed_num.push(user_guess);
-        no_of_guesses += 1;
+        no_of_guesses += 1;//Need to add limit
 
         if(user_guess < answer){
             yourGuess.textContent = "Your guess is too low";
