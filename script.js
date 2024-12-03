@@ -19,6 +19,8 @@ function play() {
         no_of_guesses += 1;//Need to add limit
         if(no_of_guesses>guess_limit){
             yourGuess.textContent="You've reached the maximum number of guesses!";
+            button.disabled = true; 
+            input.disabled = true; 
         }
 
         if (user_guess < answer) {
