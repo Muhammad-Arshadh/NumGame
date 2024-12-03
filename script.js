@@ -6,7 +6,7 @@ var input = document.getElementById("guess")
 var answer = Math.floor(Math.random() * 100) + 1;
 var no_of_guesses = 0;
 var guessed_num = [];
-var guess_limit=7;
+var guess_limit = 7;
 
 function play() {
     var user_guess = input.value;
