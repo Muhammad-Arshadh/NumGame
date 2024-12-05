@@ -14,15 +14,16 @@ function play() {
         alert("Enter a number between 1 to 100")
         button.style.pointerEvents = "none";
     }
+    if (no_of_guesses > guess_limit) {
+        yourGuess.textContent = "You've reached the maximum number of guesses!";
+        button.disabled = true;
+        input.disabled = true;
+    }
+
     else {
         guessed_num.push(user_guess);
         no_of_guesses += 1;
-        if (no_of_guesses > guess_limit) {
-            yourGuess.textContent = "You've reached the maximum number of guesses!";
-            button.disabled = true;
-            input.disabled = true;
-        }
-
+      
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
             NoOfGuess.textContent = "No of guess : " + no_of_guesses;
