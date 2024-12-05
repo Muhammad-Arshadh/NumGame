@@ -23,7 +23,7 @@ function play() {
     else {
         guessed_num.push(user_guess);
         no_of_guesses += 1;
-      
+
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
             NoOfGuess.textContent = "No of guess : " + no_of_guesses;
