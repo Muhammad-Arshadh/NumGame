@@ -36,6 +36,7 @@ function play() {
             yourGuess.textContent = "YOU GOT IT!";
             button.disabled = true;
             button.style.pointerEvents = "none";
+            input.disabled = true;
         }
 
         NoOfGuess.textContent = "No of guess : " + no_of_guesses;
