@@ -26,22 +26,21 @@ function play() {
 
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
-            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
-            GuessedNo.textContent = "Guessed No : " + guessed_num;
+           
 
         }
         else if (user_guess > answer) {
             yourGuess.textContent = "Your guess is too high";
-            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
-            GuessedNo.textContent = "Guessed No : " + guessed_num;
+          
         }
         else if (user_guess == answer) {
             yourGuess.textContent = "YOU GOT IT!";
-            NoOfGuess.textContent = "No of guess : " + no_of_guesses;
-            GuessedNo.textContent = "Guessed No : " + guessed_num;
+          
             button.disabled = true;
             button.style.pointerEvents = "none";
         }
+        NoOfGuess.textContent = "No of guess : " + no_of_guesses;
+        GuessedNo.textContent = "Guessed No : " + guessed_num;
     }
 }
 document.addEventListener("keydown", function (event) {
