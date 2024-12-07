@@ -42,7 +42,7 @@ function play() {
         NoOfGuess.textContent = "No of guess : " + no_of_guesses;
         GuessedNo.textContent = "Guessed No : " + guessed_num;
     }
-     input.value = "";// Clear the input field after enter key event
+    input.value = "";// Clear the input field after enter key event
 }
 document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
