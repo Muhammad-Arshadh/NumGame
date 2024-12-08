@@ -26,14 +26,17 @@ function play() {
 
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
+            addShakeAnimation(yourGuess);
         }
 
         else if (user_guess > answer) {
             yourGuess.textContent = "Your guess is too high";
+            addShakeAnimation(yourGuess);
         }
 
         else if (user_guess == answer) {
             yourGuess.textContent = "YOU GOT IT!";
+            addBounceAnimation(yourGuess);
             button.disabled = true;
             button.style.pointerEvents = "none";
             input.disabled = true;
