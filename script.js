@@ -59,3 +59,10 @@ function addShakeAnimation(element) {
         element.classList.remove("shake");
     });
 }
+function addBounceAnimation(element) {
+    element.classList.add("bounce");
+    element.addEventListener("animationend", () => {
+        element.classList.remove("bounce");
+    });
+}
+
