@@ -52,6 +52,7 @@ document.addEventListener("keydown", function (event) {
         play();
     }
 });
+
 // Helper function: Add shake animation for incorrect guesses
 function addShakeAnimation(element) {
     element.classList.add("shake");
@@ -59,6 +60,7 @@ function addShakeAnimation(element) {
         element.classList.remove("shake");
     });
 }
+
 function addBounceAnimation(element) {
     element.classList.add("bounce");
     element.addEventListener("animationend", () => {
