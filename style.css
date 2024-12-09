@@ -8,9 +8,9 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(45deg,
-            #89253E,
-            #3A6186);
+    background: linear-gradient(to right,
+            #5217b1,/*#5217b1 , #d6d335*/
+            #d6d335);
     font-family: "Bubblegum Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
