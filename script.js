@@ -36,6 +36,7 @@ function play() {
 
         else if (user_guess == answer) {
             yourGuess.textContent = "YOU GOT IT!";
+            yourGuess.style.color = "green";
             addBounceAnimation(yourGuess);
             button.disabled = true;
             button.style.pointerEvents = "none";
