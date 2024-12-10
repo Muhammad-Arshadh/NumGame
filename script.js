@@ -27,11 +27,13 @@ function play() {
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
             addShakeAnimation(yourGuess);
+            input.value = "";// Clear the input field after enter key event
         }
 
         else if (user_guess > answer) {
             yourGuess.textContent = "Your guess is too high";
             addShakeAnimation(yourGuess);
+            input.value = "";// Clear the input field after enter key event
         }
 
         else if (user_guess == answer) {
@@ -41,12 +43,12 @@ function play() {
             button.disabled = true;
             button.style.pointerEvents = "none";
             input.disabled = true;
+
         }
 
         NoOfGuess.textContent = "No of guess : " + no_of_guesses;
         GuessedNo.textContent = "Guessed No : " + guessed_num;
     }
-    input.value = "";// Clear the input field after enter key event
 }
 document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
