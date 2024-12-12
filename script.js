@@ -7,6 +7,7 @@ var answer = Math.floor(Math.random() * 100) + 1;
 var no_of_guesses = 0;
 var guessed_num = [];
 var guess_limit = 7;
+var game_over = false; // Flag to track if the game is over
 
 function play() {
     var user_guess = input.value;
@@ -16,6 +17,7 @@ function play() {
     }
     if (no_of_guesses > guess_limit) {
         yourGuess.textContent = "You've reached the maximum number of guesses!";
+        game_over = true; // Mark game as over
         yourGuess.style.color = "red"
         button.disabled = true;
         input.disabled = true;
@@ -23,7 +25,7 @@ function play() {
 
     else {
         guessed_num.push(user_guess);
-        no_of_guesses += 1;
+        no_of_guesses++;
 
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
@@ -40,6 +42,7 @@ function play() {
         else if (user_guess == answer) {
             yourGuess.textContent = "YOU GOT IT!";
             yourGuess.style.color = "green";
+            game_over = true; // Mark game as over
             addBounceAnimation(yourGuess);
             button.style.pointerEvents = "none";
             input.disabled = true;
@@ -52,7 +55,7 @@ function play() {
     }
 }
 document.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && !game_over) { // Only play if the game is not over
         play();
     }
 });
