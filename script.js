@@ -14,6 +14,7 @@ function play() {
     if (user_guess < 1 || user_guess > 100 || input.value === "") { //Need to disable button and hover before entering a valid input 
         alert("Enter a number between 1 to 100")
         button.style.pointerEvents = "none";
+        return;
     }
     if (no_of_guesses > guess_limit) {
         yourGuess.textContent = "You've reached the maximum number of guesses!";
