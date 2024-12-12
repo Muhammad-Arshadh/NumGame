@@ -16,6 +16,7 @@ function play() {
     }
     if (no_of_guesses > guess_limit) {
         yourGuess.textContent = "You've reached the maximum number of guesses!";
+        yourGuess.style.color = "red"
         button.disabled = true;
         input.disabled = true;
     }
@@ -40,9 +41,9 @@ function play() {
             yourGuess.textContent = "YOU GOT IT!";
             yourGuess.style.color = "green";
             addBounceAnimation(yourGuess);
-            button.disabled = true;
             button.style.pointerEvents = "none";
             input.disabled = true;
+            button.disabled = true;
 
         }
 
