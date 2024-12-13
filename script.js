@@ -11,7 +11,7 @@ var game_over = false; // Flag to track if the game is over
 
 function play() {
     var user_guess = input.value;
-    if (user_guess < 1 || user_guess > 100 || input.value === "") { //Need to disable button and hover before entering a valid input 
+    if (user_guess < 1 || user_guess > 100 || input.value === "") { 
         alert("Enter a number between 1 to 100")
         button.style.pointerEvents = "none";
         return;
