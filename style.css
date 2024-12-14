@@ -9,8 +9,9 @@
 body {
     height: 100vh;
     background: linear-gradient(to right,
-            #5217b1,/*#5217b1 , #d6d335*/
-            #d6d335);
+            #10002b,/*#5217b1 , #d6d335*/
+            #7b2cbf,
+            #10002b);
     font-family: "Bubblegum Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,12 +24,16 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    background-color: #ffffff;
+    background-color: #11001c;
     padding: 50px 10px;
     border-radius: 10px;
     display: grid;
     justify-items: center;
-    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px 5px rgb(224, 170, 255, 0.2);
+}
+
+h3,input,p {
+    color: #ecd1f9;
 }
 
 input[type="text"] {
@@ -39,6 +44,7 @@ input[type="text"] {
     border-radius: 10px;
     border: 2px solid #202020;
     color: #5a20b8;
+    background-color: #fff;
     font-weight: 600;
     font-size: 20px;
 }
