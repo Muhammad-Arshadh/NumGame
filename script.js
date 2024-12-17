@@ -63,7 +63,9 @@ document.addEventListener("keydown", function (event) {
         play();
     }
 });
-
+input.addEventListener("input", function () {
+    input.style.backgroundColor = ""; // Reset to default
+});
 // Helper function: Add shake animation for incorrect guesses
 function addShakeAnimation(element) {
     element.classList.add("shake");
