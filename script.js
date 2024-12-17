@@ -11,7 +11,7 @@ var game_over = false; // Flag to track if the game is over
 
 function play() {
     var user_guess = input.value;
-    if (user_guess < 1 || user_guess > 100 || input.value === "") { 
+    if (user_guess < 1 || user_guess > 100 || input.value === "") {
         alert("Enter a number between 1 to 100")
         button.style.pointerEvents = "none";
         return;
@@ -31,21 +31,21 @@ function play() {
         if (user_guess < answer) {
             yourGuess.textContent = "Your guess is too low";
             addShakeAnimation(yourGuess);
-            input.style.backgroundColor="#ff4c4c";
+            input.style.backgroundColor = "#ff4c4c";
             input.value = "";// Clear the input field after enter key event
         }
 
         else if (user_guess > answer) {
             yourGuess.textContent = "Your guess is too high";
             addShakeAnimation(yourGuess);
-            input.style.backgroundColor="#ff4c4c";
+            input.style.backgroundColor = "#ff4c4c";
             input.value = "";// Clear the input field after enter key event
         }
 
         else if (user_guess == answer) {
             yourGuess.textContent = "YOU GOT IT!";
             yourGuess.style.color = "green";
-            input.style.backgroundColor="#4caf50";
+            input.style.backgroundColor = "#4caf50";
             game_over = true; // Mark game as over
             addBounceAnimation(yourGuess);
             button.style.pointerEvents = "none";
