@@ -18,7 +18,7 @@ body {
     font-style: normal;
 }
 
-h1 {
+.bgtext{
     position: absolute;
     display: flex;
     text-align: center;
