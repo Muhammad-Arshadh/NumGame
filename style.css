@@ -19,14 +19,14 @@ body {
 }
 .logo{
     display: flex;
+    padding: 10px;
 }
 h1{
     color:#ecd1f9;
     padding: 10px;
 }
 #top{
-    width: 50px;
-}
+    width: 50px;}
 .bgtext{
     position: absolute;
     display: flex;
