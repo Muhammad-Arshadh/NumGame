@@ -17,7 +17,13 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
+h1{
+    color:#ecd1f9;
+    padding: 10px;
+}
+#top{
+    width: 50px;
+}
 .bgtext{
     position: absolute;
     display: flex;
