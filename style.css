@@ -19,19 +19,23 @@ body {
 }
 
 .logo {
+    position: absolute;
     display: flex;
     padding: 10px;
     justify-items: center;
+    align-items: center;
 }
 
 h1 {
     color: #ffffff;
-    padding: 12px;
-    
+    padding: 8px;
+    margin-left: px;
+    font-size: 29px;
+
 }
 
 #top {
-    width: 55px;
+    width: 50px;
 }
 
 .bgtext {
