@@ -38,6 +38,13 @@ h1 {
     width: 50px;
 }
 
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    list-style: none;
+}
+
 .bgtext {
     position: absolute;
     display: flex;
