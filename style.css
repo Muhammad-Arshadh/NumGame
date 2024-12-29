@@ -18,33 +18,28 @@ body {
     font-style: normal;
 }
 
-.logo {
-    position: absolute;
+nav{
     display: flex;
-    padding: 10px;
     justify-items: center;
+   
+    height: 50px;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: flex-end;
     align-items: center;
 }
-
-h1 {
-    color: #ffffff;
-    padding: 8px;
-    margin-left: px;
-    font-size: 29px;
-
-}
-
-#top {
-    width: 50px;
-}
-
-nav ul{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+nav li{
+    display: inline;
     list-style: none;
+    padding: 0 20px;
+
 }
 
+a{
+    text-decoration: none;
+}
 .bgtext {
     position: absolute;
     display: flex;
