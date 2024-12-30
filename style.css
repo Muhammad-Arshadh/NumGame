@@ -20,14 +20,17 @@ body {
 
 nav{
     display: flex;
-    justify-items: center;
-   
+    align-items: center;
+    justify-content: space-between;
     height: 50px;
 }
-
+.logo{
+    height: 40px;
+    padding: 0px 10px;
+    
+}
 ul {
     display: inline-flex;
-    justify-content: flex-end;
     align-items: center;
 }
 nav li{
