@@ -30,8 +30,12 @@ nav{
     
 }
 ul {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+}
+
+.nav-links li:first-child {
+    flex-grow: 1;
 }
 nav li{
     display: inline;
