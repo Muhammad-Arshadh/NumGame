@@ -18,17 +18,19 @@ body {
     font-style: normal;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
 }
-.logo{
+
+.logo {
     height: 40px;
     padding: 0px 10px;
-    
+
 }
+
 ul {
     display: flex;
     align-items: center;
@@ -37,17 +39,19 @@ ul {
 .nav-links li:first-child {
     flex-grow: 1;
 }
-nav li{
+
+nav li {
     display: inline;
     list-style: none;
     padding: 0 20px;
 
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
+
 .bgtext {
     position: absolute;
     display: flex;
