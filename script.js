@@ -23,8 +23,7 @@ function play() {
         yourGuess.textContent = `You've reached the maximum number of guesses! The number was ${answer}`;
         game_over = true; // Mark game as over
         yourGuess.style.color = "red"
-        button.disabled = true;
-        input.disabled = true;
+        disableGame();
     }
 
     else {
@@ -52,8 +51,7 @@ function play() {
             game_over = true; // Mark game as over
             addBounceAnimation(yourGuess);
             button.style.pointerEvents = "none";
-            input.disabled = true;
-            button.disabled = true;
+            disableGame();
 
         }
 
@@ -61,6 +59,12 @@ function play() {
         GuessedNo.textContent = "Guessed No : " + guessed_num;
     }
 }
+
+function disableGame() {
+    input.disabled = true;
+    button.disabled = true;
+}
+
 document.addEventListener("keydown", function (event) {
     if (event.key === "Enter" && !game_over) { // Only play if the game is not over
         play();
