@@ -6,11 +6,11 @@ const input = document.getElementById("guess")
 const background = document.getElementById("background");
 const resetButton = document.getElementById("reset-btn");
 
-var answer = Math.floor(Math.random() * 100) + 1;
-var no_of_guesses = 0;
-var guessed_num = [];
-var guess_limit = 7;
-var game_over = false; // Flag to track if the game is over
+let answer = Math.floor(Math.random() * 100) + 1;
+let no_of_guesses = 0;
+let guessed_num = [];
+let guess_limit = 7;
+let game_over = false; // Flag to track if the game is over
 
 function play() {
     var user_guess = input.value;
