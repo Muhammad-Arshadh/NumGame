@@ -65,7 +65,7 @@ a {
     color: #fff;
 }
 
-.bgtext {
+/* .bgText {
     position: absolute;
     display: flex;
     text-align: center;
@@ -76,7 +76,7 @@ a {
     z-index: 1;
     font-size: 350px;
 
-}
+} */
 
 #container {
     position: absolute;
