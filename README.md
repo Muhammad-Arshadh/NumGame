@@ -1,7 +1,7 @@
 # NumGame
 
 ## Overview
-NumGame is a number-guessing game where players guess a randomly generated number. It provides feedback on each guess to help players succeed.
+NumGame is a fun number-guessing game. Players guess a number between 1 and 100 with feedback after each attempt. Guess within 7 tries to win, or lose when the limit is reached. Enjoy smooth animations and a clean design.
 
 ## Features
 - Random target numbers (1–100)
