@@ -24,7 +24,7 @@ NumGame is a number-guessing game where players guess a randomly generated numbe
 
 ## Project Structure
 - `index.html`: Game interface
-- `style.css`: Styling (gradient background, animations, responsive layout)
+- `style.css`: Styling (gradient background, animations)
 - `script.js`: Game logic (random number, validation, animations, guess limit)
 - `icon.png`: Game icon
 
