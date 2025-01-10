@@ -28,5 +28,6 @@ NumGame is a fun number-guessing game. Players guess a number between 1 and 100 
 - `script.js`: Game logic (random number, validation, animations, guess limit)
 - `icon.png`: Game icon
 
-
+## Installation
+- You can also play the game directly [here](https://num-game-puce.vercel.app/).
 
