@@ -32,6 +32,11 @@ nav {
     left: 0%;
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+}
+
 ul {
     display: flex;
     align-items: center;
