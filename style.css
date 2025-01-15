@@ -112,7 +112,7 @@ input[type="text"] {
     font-size: 20px;
 }
 
-button {
+#btn {
     width: 160px;
     padding: 15px;
     margin-bottom: 10px;
