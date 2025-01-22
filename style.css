@@ -159,7 +159,12 @@ input[type="text"] {
     backdrop-filter: blur(5px); /* Add blur effect to the button */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
-
+#reset-btn:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    border-color: rgba(255, 255, 255, 0.3); /* Lighten border on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
 
 
 
