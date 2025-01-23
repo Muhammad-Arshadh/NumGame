@@ -1,8 +1,8 @@
-var yourGuess = document.getElementById("message1")
-var NoOfGuess = document.getElementById("message2")
-var GuessedNo = document.getElementById("message3")
-var button = document.getElementById("btn")
-var input = document.getElementById("guess")
+const yourGuess = document.getElementById("message1")
+const NoOfGuess = document.getElementById("message2")
+const GuessedNo = document.getElementById("message3")
+const button = document.getElementById("btn")
+const input = document.getElementById("guess")
 const background = document.getElementById("background");
 const resetButton = document.getElementById("reset-btn");
 
