@@ -24,6 +24,7 @@ function play() {
         game_over = true; // Mark game as over
         yourGuess.style.color = "red"
         disableGame();
+        showGameOverUI();
     }
 
     else {
@@ -52,6 +53,7 @@ function play() {
             addBounceAnimation(yourGuess);
             button.style.pointerEvents = "none";
             disableGame();
+            showGameOverUI();
 
         }
 
@@ -59,6 +61,11 @@ function play() {
         GuessedNo.textContent = "Guessed No : " + guessed_num;
     }
 }
+
+function showGameOverUI() {
+    background.style.display = "flex"; 
+}
+
 
 function disableGame() {
     input.disabled = true;
