@@ -63,7 +63,9 @@ function play() {
 }
 
 function showGameOverUI() {
+    setTimeout(() => {
     background.style.display = "flex"; 
+    },4000);
 }
 
 
