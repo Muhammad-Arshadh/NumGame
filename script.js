@@ -62,6 +62,26 @@ function play() {
     }
 }
 
+function resetGame() {
+    answer = Math.floor(Math.random() * 100) + 1; // Generate a new random number
+    no_of_guesses = 0; // Reset guess count
+    guessed_num = []; // Clear guessed numbers
+    game_over = false; // Reset game over flag
+
+    // Reset UI
+    yourGuess.textContent = "";
+    NoOfGuess.textContent = "No of guesses: 0";
+    GuessedNo.textContent = "Guessed numbers: None";
+    input.disabled = false;
+    button.disabled = false;
+    input.value = "";
+    input.focus();
+    input.style.backgroundColor = ""; // Reset input background color
+
+    // Hide the background (and reset button inside it)
+    background.style.display = "none";
+}
+
 function showGameOverUI() {
     setTimeout(() => {
     background.style.display = "flex"; 
