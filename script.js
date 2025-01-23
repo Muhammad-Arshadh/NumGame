@@ -70,8 +70,8 @@ function resetGame() {
 
     // Reset UI
     yourGuess.textContent = "";
-    NoOfGuess.textContent = "No of guesses: 0";
-    GuessedNo.textContent = "Guessed numbers: None";
+    NoOfGuess.textContent ="Number of guess : 0";
+    GuessedNo.textContent = "Guessed numbers are: None";
     input.disabled = false;
     button.disabled = false;
     input.value = "";
