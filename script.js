@@ -3,6 +3,8 @@ var NoOfGuess = document.getElementById("message2")
 var GuessedNo = document.getElementById("message3")
 var button = document.getElementById("btn")
 var input = document.getElementById("guess")
+const background = document.getElementById("background");
+const resetButton = document.getElementById("reset-btn");
 
 var answer = Math.floor(Math.random() * 100) + 1;
 var no_of_guesses = 0;
