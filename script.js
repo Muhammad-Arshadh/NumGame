@@ -3,6 +3,7 @@ var NoOfGuess = document.getElementById("message2")
 var GuessedNo = document.getElementById("message3")
 var button = document.getElementById("btn")
 var input = document.getElementById("guess")
+
 var answer = Math.floor(Math.random() * 100) + 1;
 var no_of_guesses = 0;
 var guessed_num = [];
@@ -17,7 +18,7 @@ function play() {
         return;
     }
     if (no_of_guesses > guess_limit) {
-        yourGuess.textContent = "You've reached the maximum number of guesses!";
+        yourGuess.textContent = `You've reached the maximum number of guesses! The number was ${answer}`;
         game_over = true; // Mark game as over
         yourGuess.style.color = "red"
         button.disabled = true;
