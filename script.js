@@ -5,6 +5,7 @@ const button = document.getElementById("btn")
 const input = document.getElementById("guess")
 const background = document.getElementById("background");
 const resetButton = document.getElementById("reset-btn");
+const closeButton = document.getElementById("close-btn");
 
 let answer = Math.floor(Math.random() * 100) + 1;
 let no_of_guesses = 0;
@@ -74,6 +75,7 @@ function resetGame() {
     GuessedNo.textContent = "Guessed numbers are: None";
     input.disabled = false;
     button.disabled = false;
+    button.style.pointerEvents = 'auto';
     input.value = "";
     input.focus();
     input.style.backgroundColor = ""; // Reset input background color
@@ -88,10 +90,15 @@ function showGameOverUI() {
     },4000);
 }
 
+function closeGameOverUI() {
+    background.style.display = "none";
+}
+
 
 function disableGame() {
     input.disabled = true;
     button.disabled = true;
+    button.style.pointerEvents = "none";
 }
 
 document.addEventListener("keydown", function (event) {
