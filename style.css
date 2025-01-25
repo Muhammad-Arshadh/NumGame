@@ -183,7 +183,10 @@ input[type="text"] {
     justify-content: center;
 }
 
-
+#close-btn:hover {
+    color: #fff;
+    background: rgba(255, 0, 0, 0.882);
+}
 
 
 /* Shake Animation */
