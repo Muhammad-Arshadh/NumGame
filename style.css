@@ -136,6 +136,7 @@ input[type="text"] {
 #background {
     position: absolute;
     width: 60%;
+    height: 60%;
     min-width: 580px;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -143,7 +144,6 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   
     z-index: 1; /* Place it above the body but below the container */
